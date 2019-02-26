@@ -10,7 +10,8 @@ Welcome to 一本书's documentation!
    :maxdepth: 2
    :caption: 目录:
 
-   example
+   reStructuredText
+   Markdown
 
 Indices and tables
 ==================
