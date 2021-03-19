@@ -127,19 +127,20 @@ latex_elements = {
     # 'figure_align': 'htbp',
     'papersize': 'a4paper',
     'pointsize': '11pt',
+    'utf8extra': '',
+    'inputenc': '',
+    'babel': '',
     'preamble': r'''
 \usepackage{xeCJK}
-\setCJKmainfont[BoldFont=STZhongsong, ItalicFont=STKaiti]{STSong}
-\setCJKsansfont[BoldFont=STHeiti]{STXihei}
-\setCJKmonofont{STFangsong}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+# 镜像中只安装了 Noto Sans CJK 字体（https://www.google.com/get/noto/help/cjk/）
+# 如果需要其他字体，可以基于本镜像自行安装其他字体
+\setCJKmainfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
 \XeTeXlinebreaklocale "zh"
 \XeTeXlinebreakskip = 0pt plus 1pt
-\parindent 2em
-\definecolor{VerbatimColor}{rgb}{0.95,0.95,0.95}
-\setcounter{tocdepth}{3}
-\renewcommand\familydefault{\ttdefault}
-\renewcommand\CJKfamilydefault{\CJKrmdefault}
-'''
+''',
 }
 
 
