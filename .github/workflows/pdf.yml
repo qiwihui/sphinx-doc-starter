@@ -1,0 +1,16 @@
+on:
+  push:
+
+name: 编译文档
+
+jobs:
+  build:
+    name: 编译文档
+    runs-on: ubuntu-latest
+    container:
+      image: init2/sphinx-cjk-pdf 
+    steps:
+      - uses: actions/checkout@v2
+      - name: build with docker
+        run: |
+          make latexpdf
