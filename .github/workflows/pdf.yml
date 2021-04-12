@@ -16,3 +16,7 @@ jobs:
           apt update && apt install -y --no-install-recommends latexmk fonts-freefont-otf
           pip3 install -U -r requirements.txt
           make latexpdf
+      - uses: actions/upload-artifact@v2
+        with:
+          name: output
+          path: output.pdf
