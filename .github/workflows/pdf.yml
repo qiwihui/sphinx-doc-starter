@@ -16,3 +16,6 @@ jobs:
           apt update && apt install -y --no-install-recommends latexmk texlive-fonts-recommended
           pip3 install -U -r requirements.txt
           make latexpdf
+      - name: Setup tmate session
+        if: ${{ failure() }}
+        uses: mxschmitt/action-tmate@v3
