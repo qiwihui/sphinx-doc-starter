@@ -8,7 +8,7 @@ jobs:
     name: 编译文档
     runs-on: ubuntu-latest
     container:
-      image: qiwihui/sphinx-cjk-pdf 
+      image: qiwihui/docker-sphinx-cjk-pdf 
     steps:
       - uses: actions/checkout@v2
       - name: build with docker
