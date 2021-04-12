@@ -13,6 +13,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: build with docker
         run: |
-          apt update && apt install -y latexmk
+          apt update && apt install -y --no-install-recommends latexmk texlive-fonts-recommended
           pip3 install -U -r requirements.txt
           make latexpdf
