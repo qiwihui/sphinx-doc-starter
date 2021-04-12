@@ -134,8 +134,6 @@ latex_elements = {
 \usepackage{xeCJK}
 \usepackage{indentfirst}
 \setlength{\parindent}{2em}
-# 镜像中只安装了 Noto Sans CJK 字体（https://www.google.com/get/noto/help/cjk/）
-# 如果需要其他字体，可以基于本镜像自行安装其他字体
 \setCJKmainfont{Noto Sans CJK SC}
 \setCJKmonofont{Noto Sans Mono CJK SC}
 \XeTeXlinebreaklocale "zh"
